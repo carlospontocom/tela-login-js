@@ -14,3 +14,17 @@ html{
     min-height: 100vh;
     gap: 20px;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo .top{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo .bottom{
+    font-size: 2rem;
+}
