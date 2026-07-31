@@ -17,6 +17,17 @@ html{
     min-height: 100vh;
 }
 
+.aside{
+    color: white;
+}
+
+.aside-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 35px;
+}
 
 
 label{
@@ -25,6 +36,9 @@ label{
 
 .form-container{
     background-color: #f2f2f2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .form-content{
