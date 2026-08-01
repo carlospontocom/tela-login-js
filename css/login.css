@@ -57,7 +57,10 @@ html {
     border-radius: 10px;
     padding: 30px;
     width: 100%;
+    max-width: 450px;
 }
+
+
 
 h1{    padding-bottom: 1rem;
 }
