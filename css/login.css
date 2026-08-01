@@ -1,31 +1,139 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-html{
+html {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container{
+.container {
     display: grid;
-    grid-template-columns: 45% auto;
+    grid-template-columns: 37% auto;
+    align-items: center;
     min-height: 100vh;
-    gap: 20px;
-    background-color: ;
+ }
+
+
+.aside {
+    background-color: rgb(36, 99, 36);
+    color: white;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 2rem;
 }
 
-.logo{
+.aside-content{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.badge{
+    text-transform: uppercase;
+    color: orange;
+}
+
+.temas h2{
+    font-size: 2rem;
+    text-transform:capitalize;
+    font-weight: bold;
+}
+
+.form-container {
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 90px;
+}
+
+.form-content {
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+}
+
+h1{    padding-bottom: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 3px;
+}
+
+.field {
+    border: 1px solid #00000040;
+    border-radius: 10px;
+}
+
+.btn {
+    border: 0;
+    border-radius: 10px;
+    background-color: green;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    letter-spacing: 1.4px;
+    padding: 14px;
+}
+
+.logo {
     display: flex;
     align-items: center;
 }
 
-.logo .top{
+.logo .top {
     font-size: 14px;
     font-weight: bold;
 }
 
-.logo .bottom{
+.logo .bottom {
     font-size: 2rem;
+}
+
+
+label {
+    display: block;
+    font-size: 14px;
+}
+
+.field {
+    padding: 13px 5px;
+    width: 100%;
+}
+
+@media (max-width: 575px){
+    .form-container{
+        padding: 10px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .aside{
+         min-height: 380px;
+    }
+
+    .form-content{
+        height: auto;
+    }
 }
